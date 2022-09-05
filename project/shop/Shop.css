@@ -37,6 +37,15 @@ a.menu-nav__link:hover > ul.navigation-submenu { /* Hats почему-то в с
     width: 10%; /* ширина конетнта */
 }
 
+input#button-hot-pink {
+    background: url("../../img/site-background-image-hot-pink.jpg");
+    padding: 2rem;
+    width: 2rem;
+    height: 2rem;
+    position: relative;
+    float: right;
+}
+
 div.grid-uniform, .section-header {
     position: relative; /* позиция */
     float: left; /* выравнял по левой стороне */
