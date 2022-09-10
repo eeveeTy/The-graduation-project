@@ -4,24 +4,43 @@
     <meta charset="UTF-8">
     <title>Shop</title>
     <link rel="stylesheet" href="Shop.css" type="text/css">
+    <script src="Shop.js"></script>
   </head>
-  <body>
+  <body id="background-img">
     <div class="menu-bar">
       <nav class="nav-bar">
         <div class="push-left">
           <ul class="navigation-menu">
-            <li><a href="#" class="menu-nav__link">MUSIC</a></li>
+            <li>
+              <label class="menu-nav__link" for="menu-nav__link--music">MUSIC</label>
+              <input type="checkbox" class="menu-nav__link--checkbox"
+                     id="menu-nav__link--music"
+                     onclick="contentMusicDisplay()">
+            </li>
             <li>
               <a href="#" class="menu-nav__link" id="menu-nav__link-clothes">CLOTHES
                 <ul class="navigation-submenu">
-                  <li><input type="checkbox" class="input-menu" id="t-ships-menu"></li>
-                  <li><input type="checkbox" class="input-menu" id="pants_and-shorts-menu"></li>
-                  <li><input type="checkbox" class="input-menu" id="hoodie-menu"></li>
-                  <li><input type="checkbox" class="input-menu" id="hats-menu"></li>
-                  <li><label class="submenu-nav__link" for="t-ships-menu">T-SHIPS</label></li>
-                  <li><label class="submenu-nav__link" for="pants_and-shorts-menu">PANTS AND SHORTS</label></li>
-                  <li><label class="submenu-nav__link" for="hoodie-menu">HOODIE</label></li>
-                  <li><label class="submenu-nav__link" for="hats-menu">HATS</label></li>
+                  <li><label class="submenu-nav__link" for="navigation-submenu__link--t-ships">T-SHIPS</label>
+                    <input type="checkbox" class="navigation-submenu__link-checkbox"
+                           id="navigation-submenu__link--t-ships"
+                           onclick="contentTShirtsDisplay()">
+                  </li>
+                  <li><label class="submenu-nav__link" for="navigation-submenu__link--pants_and_shorts">PANTS AND
+                    SHORTS</label>
+                    <input type="checkbox" class="navigation-submenu__link-checkbox"
+                           id="navigation-submenu__link--pants_and_shorts"
+                           onclick="contentPantsAndShortsDisplay()">
+                  </li>
+                  <li><label class="submenu-nav__link" for="navigation-submenu__link--hoodie">HOODIE</label>
+                    <input type="checkbox" class="navigation-submenu__link-checkbox"
+                           id="navigation-submenu__link--hoodie"
+                           onclick="contentHoodieDisplay()">
+                  </li>
+                  <li><label class="submenu-nav__link" for="navigation-submenu__link--hats">HATS</label>
+                    <input type="checkbox" class="navigation-submenu__link-checkbox"
+                           id="navigation-submenu__link--hats"
+                           onclick="contentHatsDisplay()">
+                  </li>
                 </ul>
               </a>
             </li>
@@ -30,7 +49,7 @@
       </nav>
     </div>
     <div class="button">
-      <input type="button" id="button-hot-pink">
+      <input type="button" id="button-hot-pink" onclick='backgroundChange()'>
     </div>
     <main class="wrapper main-content">
       <header class="section-header">ITEMS</header>
@@ -341,7 +360,7 @@
             </div>
           </div>
         </div>
-        <div class="grid__item grid__item-19 content-music">
+        <div class="grid__item grid__item-19 content__music">
           <div class="product-container">
             <a href="#" class="grid__image">
               <picture>
@@ -358,7 +377,7 @@
             </div>
           </div>
         </div>
-        <div class="grid__item grid__item-20 content-music">
+        <div class="grid__item grid__item-20 content__music">
           <div class="product-container">
             <a href="#" class="grid__image">
               <picture>
@@ -375,7 +394,7 @@
             </div>
           </div>
         </div>
-        <div class="grid__item grid__item-21 content-music">
+        <div class="grid__item grid__item-21 content__music">
           <div class="product-container">
             <a href="#" class="grid__image">
               <picture>
