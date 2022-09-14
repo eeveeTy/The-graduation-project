@@ -1,0 +1,25 @@
+body {
+    background: darkred;
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    display: none;
+}
+
+header {
+    position: relative;
+}
+
+.img-position {
+    margin: 600px 0 0 0 ;
+    display: flex;
+    top: 50%;
+    background: blue;
+}
+
+#main-logo {
+    margin: auto;
+    cursor: pointer;
+}
