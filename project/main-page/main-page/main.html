@@ -3,126 +3,41 @@
   <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&display=swap');
-
-        body {
-            font-family: 'Oswald', sans-serif;
-        }
-
-        .main-header {
-            width: 100%;
-            position: fixed;
-            top: 0;
-            left: 0;
-        }
-
-        nav.main-nav {
-            margin: 0;
-            background-color: pink;
-            text-align: center;
-        }
-
-        nav ul {
-            padding: 0;
-            margin: 0;
-            list-style: none;
-            position: relative;
-        }
-
-        li.main-nav__menu__item, ul.main-nav__menu {
-            margin: 0 -0.3rem 0 0;
-            display: inline-block;
-            background-color: pink;
-            border-left: 2px solid purple;
-        }
-
-        nav ul li:first-child {
-            border-left: none;
-        }
-
-        nav a {
-            display: block;
-            padding: 0 6.25rem;
-            color: purple;
-            font-size: 20px;
-            /* а тут я не понимаю от чего отсчитываются ремы и емы, и как сделать пропорцию к
-                       пикселям, по этому оставил пока их */
-            line-height: 3.75rem; /* Не понял в каких еденицах должен быть и сдбелал ремы */
-            text-decoration: none;
-
-        }
-
-        nav a:hover {
-            background-color: purple;
-            color: pink;
-        }
-
-        nav ul.main-nav__menu ul.main-nav__submenu { /* я не знаю как сделать, чтоб сабменю было прям под тем, куда
-        оно встроенно */
-            display: none;
-            position: absolute;
-            top: 100%;
-        }
-
-        nav ul li:hover > ul.main-nav__submenu {
-            display: inherit;
-        }
-
-        nav ul.main-nav__menu ul.main-nav__submenu li {
-            min-width: 9.375rem;
-            float: none;
-            display: list-item;
-            position: relative;
-            border: none;
-        }
-
-        nav ul.main-nav__menu ul.main-nav__submenu li:nth-child(1) {
-            background-image: url("img/Amala.jpg");
-        }
-
-        nav ul.main-nav__menu ul.main-nav__submenu li:nth-child(2) {
-            background-image: url("img/HotPink.jpg");
-        }
-
-        nav ul.main-nav__menu ul.main-nav__submenu li:nth-child(3) {
-            background-image: url("img/PlanetHer.jpg");
-        }
-
-        nav ul.main-nav__menu ul.main-nav__submenu a:hover {
-            opacity: 30%;
-        }
-
-        @media (max-width: 40rem) { /* адаптивность для саб меню (изображение двоится, но мне нравится и я не убирал */
-            li.main-nav__menu__item, ul.main-nav__menu {
-                background-color: #2A7DB5;
-                display: initial;
-            }
-
-            nav ul li:hover > ul.main-nav__submenu {
-                display: inline;
-                position: relative;
-            }
-        }
-    </style>
+    <link href="main.css" rel="stylesheet" type="text/css">
   </head>
   <body>
     <header class="main-header">
       <nav class="main-nav">
         <ul class="main-nav__menu">
-          <li class="main-nav__menu__item"><a href="">MUSIC</a>
-            <ul class="main-nav__submenu">
-              <li class="main-nav_submenu__item"><a href="">AMALA</a></li>
-              <li class="main-nav_submenu__item"><a href="">HOT PINK</a></li>
-              <li class="main-nav_submenu__item"><a href="">PLANET HER</a></li>
-            </ul>
-          </li>
+          <li class="main-nav__menu__item"><a href="">MUSIC</a></li>
           <li class="main-nav__menu__item"><a href="">VIDEO</a></li>
           <li class="main-nav__menu__item"><a href="">SHOP</a></li>
           <li class="main-nav__menu__item"><a href="">DOJA</a></li>
-          <li class="main-nav__menu__item"><a href="">SOCIAL</a></li>
         </ul>
       </nav>
     </header>
+    <div class="mobile-img">
+      <img src="img/menu3.png" alt="menu-logo" onclick="mobileDisplayBlock()">
+    </div>
+    <nav class="mobile-nav">
+      <ul class="mobile-nav__items">
+        <li class="mobile-nav__item">
+          <a href="#">MUSIC</a>
+        </li>
+        <li class="mobile-nav__item">
+          <a href="#">VIDEO</a>
+        </li>
+        <li class="mobile-nav__item">
+          <a href="#">SHOP</a>
+        </li>
+        <li class="mobile-nav__item">
+          <a href="#">DOJA</a>
+        </li>
+      </ul>
+      <div>
+        <button class="mobile-nav__btn--closed">Closed</button>
+      </div>
+    </nav>
+    <script src="main.js"></script>
   </body>
 </html>
