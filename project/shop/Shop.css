@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&display=swap');
+
+body {
+    background: #c7b39b url("../../img/site-background-image-planet-her.jpg") no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Oswald', sans-serif;
+}
+
+ul.navigation-menu, ul.navigation-submenu {
+    list-style: none; /* Убираем маркеры */
+}
+
+ul.navigation-menu > li, ul.navigation-submenu > li {
+    padding: 1rem;
+    float: left;
+    margin-right: 1rem;
+}
+
+input.menu-nav__link--checkbox, input.navigation-submenu__link-checkbox { /* прячем чекбоксы*/
+    display: none;
+}
+
+.menu-nav__link, .submenu-nav__link {
+    text-decoration: none; /* Убираем подчёркивания */
+    color: white; /* Цвет текста */
+    cursor: pointer;
+}
+
+a.menu-nav__link:hover, label.submenu-nav__link:hover {
+    opacity: 70%; /* прозрачность при наведении*/
+    cursor: pointer; /* курсор "кликер"*/
+}
+
+a.menu-nav__link > ul.navigation-submenu, .input-menu {
+    position: absolute; /**/
+    display: none; /*Спрятали текст*/
+}
+
+a.menu-nav__link:hover > ul.navigation-submenu { /* Hats почему-то в столибк вместе с Hoodie*/ /* уже пофиг*/
+    display: flex; /* элемент покахывается как "блочный" */ /* пофиг*/
+    flex-direction: column-reverse; /* пока так, но тут считываются также и инпуты и из-за этого остаёть много место*/
+    width: 10%; /* ширина конетнта */
+}
+
+input#button-hot-pink { /***************************************/
+    background: url("../../img/site-background-image-hot-pink.jpg");
+    padding: 2rem;
+    width: 2rem;
+    height: 2rem;
+    position: relative;
+    float: right;
+}
+
+div.grid-uniform, .section-header {
+    position: relative; /* позиция */
+    float: left; /* выравнял по левой стороне */
+    text-align: center; /* текст по центру */
+    display: flex;
+    flex-wrap: wrap; /* в несколько линий */
+    justify-content: center; /* пространста выравниявания по центру */
+    width: 100%; /* размел блока по всей ширине строницы */
+    margin-bottom: 6.25rem;
+}
+
+.section-header {
+    margin-top: 20%; /* отступ сверху */
+    color: white; /* цвет еткста */
+    font-size: 50px; /* размер шрифта */
+}
+
+.product-title > a, .currency {
+    color: pink; /* цвет шрифта */
+    font-size: 2em; /* размер шрифта (заголовка) */
+    text-decoration: none; /* убрали подчёркивание */
+}
+
+.currency {
+    font-size: 1.5em; /* размер шрифта (цен) */
+}
+
+@media (max-width: 576px) {
+    .grid__item, .img {
+        width: 100%;
+        font-size: 0.5em;
+    }
+}
