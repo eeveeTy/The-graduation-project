@@ -1,0 +1,178 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: rgba(66, 66, 66, 0.77);
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.album {
+    margin: 5rem;
+    text-align: center;
+}
+
+/* шапки альбомов  */
+.album-header {
+    width: 463.991px;
+    height: 500px;
+    border-radius: 50px;
+    cursor: pointer;
+    border: 2px solid black;
+}
+
+.album-header:hover, .album-content__audio:hover {
+    animation: colorTestSecond 2s infinite linear;
+}
+
+.amala-header {
+    background: url("media/img/amala-header.png") no-repeat;
+    background-size: cover;
+}
+
+.hotPink-header {
+    background: url("media/img/hotPink-header.jpg") no-repeat;
+    background-size: cover;
+}
+
+.planetHer-header {
+    background: url("media/img/planetHer-header.png") no-repeat;
+    background-size: cover;
+}
+
+/* контент в амале */
+.album-content__audio {
+    display: none;
+}
+
+.album-content__audio {
+    margin: 2rem 0;
+    border-radius: 50px;
+    border: 2px solid black;
+}
+
+.amala-content__audio {
+    background: #c68771;
+}
+
+.hotPink-content__audio {
+    background: #ff54ac;
+
+}
+
+.planetHer-content__audio {
+    background: #0f0b22;
+}
+
+ul.album__items {
+    margin: 0;
+    padding: 1rem;
+}
+
+ul.amala-items {
+    color: #c05346;
+    transition: color 2s;
+}
+
+ul.hotPink-items {
+    color: #f3b7a7;
+}
+
+ul.planetHer-items {
+    color: #1e4c99;
+}
+
+li.album__item {
+    display: table;
+    justify-content: center;
+    margin: 0.5rem;
+    vertical-align: top;
+    list-style-type: none;
+}
+
+li.album__item:hover { /* анимация, так как есть пунк в сдаче, один элемент который изучили сами*/
+    animation: colorTest 2s infinite linear;
+}
+
+li.album__item > p {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0 0.5rem;
+    width: 6.25rem;
+}
+
+@media (max-width: 1210px) {
+    .backgroundAmala {
+        background: url("media/img/amala-Background.jpg") no-repeat center center fixed;
+        background-size: cover;
+    }
+
+    .backgroundHotPink {
+        background: url("media/img/hotPink-background.jpg") no-repeat center center fixed;
+        background-size: cover;
+    }
+
+    .backgroundPlanetHer {
+        background: url("media/img/planetHer-background.jpg") no-repeat center center fixed;
+        background-size: cover;
+    }
+}
+
+/*залоченый класс*/
+.backgroundAmala {
+    background: url("media/img/amala-Background.jpg") no-repeat fixed;;
+    background-size: cover;
+}
+
+.backgroundHotPink {
+    background: url("media/img/hotPink-background.jpg") no-repeat fixed;
+    background-size: cover;
+}
+
+.backgroundPlanetHer {
+    background: url("media/img/planetHer-background.jpg") no-repeat fixed;
+    background-size: cover;
+}
+
+/* тест анимации */
+
+@keyframes colorTest {
+    from {
+        color: #ff54ac;
+        animation-duration: 1s;
+    }
+    25% {
+        color: #c68771;
+        animation-duration: 2s;
+    }
+    50% {
+        color: #0f0b22;
+        animation-duration: 2s;
+    }
+    to {
+        color: #ff54ac;
+        animation-duration: 1s;
+    }
+}
+
+@keyframes colorTestSecond {
+    from {
+        border-color: #ff54ac;
+        animation-duration: 1s;
+    }
+    25% {
+        border-color: #c68771;
+        animation-duration: 2s;
+    }
+    50% {
+        border-color: #0f0b22;
+        animation-duration: 2s;
+    }
+    to {
+        border-color: #ff54ac;
+        animation-duration: 1s;
+    }
+}
