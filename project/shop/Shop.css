@@ -86,3 +86,7 @@ div.grid-uniform {
 .grid-uniform__item {
     display: none;
 }
+
+.contentDisplayBlock {
+    display: block;
+}
