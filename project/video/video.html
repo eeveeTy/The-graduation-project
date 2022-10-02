@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="videoStyle.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <section>
+      <div class="main-content">
+        <div class="video">
+          <iframe src="https://www.youtube.com/embed/yxW5yuzVi8w" title="YouTube video player"
+                  class="video-woman"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+          <iframe src="https://www.youtube.com/embed/9Ko-nEYJ1GE" title="YouTube video player"
+                  class="video-yuh"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+          <iframe src="https://www.youtube.com/embed/JXgV1rXUoME" title="YouTube video player"
+                  class="video-youRight"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+        </div>
+        <div class="btn">
+          <div class="btn-item btn__position_left" onclick="left()">
+            <button class="button button__hover-red">previous</button>
+          </div>
+          <div class="btn-item btn__position_right" onclick="right()">
+            <button class="button button__hover-green">next</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="videoScript.js"></script>
+  </body>
+</html>
