@@ -10,12 +10,11 @@ input#button-hot-pink { /***************************************/
     background: url("../../img/site-background-image-hot-pink.jpg");
     width: 60px;
     height: 60px;
-    position: relative;
-    float: right;
-    border: none;
+    position: fixed;
+    margin: 0.25rem;
 }
 
-div.grid-uniform, .section-header {
+div.grid-uniform {
     position: relative; /* позиция */
     float: left; /* выравнял по левой стороне */
     text-align: center; /* текст по центру */
@@ -26,10 +25,41 @@ div.grid-uniform, .section-header {
     margin-bottom: 6.25rem;
 }
 
+/*поисковик*/
+
 .section-header {
-    margin-top: 20%; /* отступ сверху */
-    color: white; /* цвет еткста */
-    font-size: 50px; /* размер шрифта */
+    margin: 200px 0;
+    text-align: center;
+    color: pink;
+    font-size: 2.5rem;
+}
+
+.search-menu__item {
+    margin: 0.25rem 0.5rem;
+    padding: 0 1rem ;
+    cursor: pointer;
+    transition: color 0.5s, background-color 0.5s;
+    border: 2px solid pink;
+    border-radius: 10px;
+}
+
+.search-menu__item:hover {
+    color: pink;
+    background-color: purple;
+}
+
+/**/
+
+.grid-uniform {
+    z-index: 0;
+}
+
+.search-menu__items {
+    display: inline-block;
+}
+
+.search-menu__item {
+    display: inline-block;
 }
 
 .product-title > a, .currency {
@@ -42,9 +72,17 @@ div.grid-uniform, .section-header {
     font-size: 1.5em; /* размер шрифта (цен) */
 }
 
+/* медиа */
+
 @media (max-width: 576px) {
-    .grid__item, .img {
+    .grid__item, .img{
         width: 100%;
         font-size: 0.5em;
     }
+}
+
+/*псевдоклассы*/
+
+.grid-uniform__item {
+    display: none;
 }

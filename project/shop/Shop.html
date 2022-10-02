@@ -18,7 +18,7 @@
       </nav>
     </div>
     <div class="mobile-img">
-      <img src="header/img/menu3.png" alt="menu-logo" onclick="mobileDisplayBlock()">
+      <img src="header/img/menu3.png" alt="menu-logo" class="menu-logo" onclick="mobileDisplayBlock()">
     </div>
     <nav class="mobile-nav">
       <ul class="mobile-nav__items">
@@ -45,7 +45,17 @@
       <input type="button" id="button-hot-pink" onclick='backgroundChange()'>
     </div>
     <main class="wrapper main-content">
-      <header class="section-header">ITEMS</header>
+      <header class="section-header">
+        <nav class="search-menu">
+          <ul class="search-menu__items">
+            <li class="search-menu__item" onclick="contentHoodieDisplay()">Hoodie</li>
+            <li class="search-menu__item" onclick="contentHatsDisplay()">Hats</li>
+            <li class="search-menu__item" onclick="contentPantsAndShortsDisplay()">Pants and Shorts</li>
+            <li class="search-menu__item" onclick="contentTShirtsDisplay()">T-shirts</li>
+            <li class="search-menu__item" onclick="contentMusicDisplay()">Music</li>
+          </ul>
+        </nav>
+      </header>
       <div class="grid-uniform">
         <div class="grid-uniform__item grid--item__block--1 grid-uniform__content--hoodie">
           <div class="product-container">
