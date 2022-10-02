@@ -7,12 +7,6 @@ body {
     height: 100%;
     max-width: 100%;
 }
-
-.test {
-    padding: 10px;
-    color: white;
-}
-
 #main-header {
     margin: 0;
 }
@@ -29,7 +23,6 @@ body {
 
 .navigation-menu-career > li, li.main-list {
     list-style-type: none;
-    padding: 10px;
     margin: 10px;
 }
 
@@ -98,14 +91,13 @@ h2.awards-nominations-header {
     text-align: center;
     width: 100%;
     margin: auto 2rem;
-    padding: 0 2rem;
 
     border-collapse: collapse;
 }
 
 .awards-nominations-table td, th {
     border: 1px solid;
-    padding: 1rem;
+    padding: 0 1rem;
 }
 
 .awards-nominations-table a {
@@ -115,10 +107,10 @@ h2.awards-nominations-header {
 
 @media screen and (max-width: 1100px) {
     .navigation-box {
-        position: relative;
-        display: flex;
-        flex-wrap: wrap;
-        width: 50%;
+        margin: 0;
+        padding: 0;
+        display: block;
+        text-align: center;
     }
 
     .content-header {
@@ -126,7 +118,13 @@ h2.awards-nominations-header {
     }
 
     .navigation-box li {
-        width: 50%;
+        width: 100%;
+    }
+
+    .navigation-menu, .navigation-menu-career {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
     }
 
     .main-img {
