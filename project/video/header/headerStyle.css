@@ -11,6 +11,7 @@ body {
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 1;
 }
 
 nav.main-nav {
@@ -29,11 +30,6 @@ li.main-nav__menu__item, ul.main-nav__menu {
     margin: 0 -0.3rem 0 0;
     display: inline-block;
     background-color: pink;
-    border-left: 2px solid purple;
-}
-
-nav ul li:first-child {
-    border-left: none;
 }
 
 li a {
@@ -58,11 +54,11 @@ nav a:hover {
 }
 
 /**/
-img {
-    display: none;
-}
 
 /* мобильное */
+.mobile-img {
+    display: none;
+}
 
 .mobile-nav {
     background: url("img/mobile6.jpg") no-repeat;
@@ -96,7 +92,7 @@ li.mobile-nav__item > a:hover {
 
 /**/
 
-@media (max-width: 1070px) {
+@media (max-width: 1076px) {
     nav ul li:hover > ul.main-nav__submenu {
         display: inline;
         position: relative;
@@ -107,12 +103,12 @@ li.mobile-nav__item > a:hover {
     }
 
     /* Значёк меню*/
-    div.mobile-img {
-        width: 1000px;
+    div.menu-logo {
+        display: block;
     }
 
-    img {
-        display: block;
+    div.mobile-img {
+        width: 1000px;
     }
 
     /**/
@@ -137,9 +133,6 @@ li.mobile-nav__item > a:hover {
         margin-top: 5rem;
     }
 
-    ul.mobile-nav__items {
-    }
-
     li.mobile-nav__item {
         padding: 0;
         margin: 0;
@@ -151,9 +144,6 @@ li.mobile-nav__item > a:hover {
         text-align: left;
     }
 
-    div.mobile-nav__btn--closed {
-    }
-
     button.mobile-nav__btn--closed {
         font-size: 1.5rem;
         border: none;
@@ -163,4 +153,9 @@ li.mobile-nav__item > a:hover {
         color: red;
         cursor: pointer;
     }
+}
+/*псевдо*/
+
+.headerDisplayNone {
+    display: none;
 }

@@ -147,9 +147,6 @@ li.mobile-nav__item > a:hover {
         text-align: left;
     }
 
-    div.mobile-nav__btn--closed {
-    }
-
     button.mobile-nav__btn--closed {
         font-size: 1.5rem;
         border: none;
