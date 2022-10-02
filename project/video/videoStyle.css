@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url("https://static6.depositphotos.com/1037473/614/i/600/depositphotos_6149151-stock-photo-plain-pink-background-with-vignetting.jpg") no-repeat fixed center center/cover;
+}
+
+section {
+    text-align: center;
+}
+
+.main-content {
+    margin: 0 10%;
+}
+
+iframe {
+    margin-top: 6vh;
+    width: 100%;
+    height: 80vh;
+    border-radius: 50px;
+}
+
+.btn {
+    width: 100%;
+    display: flex;
+}
+
+.btn-item {
+    width: 100%;
+}
+
+.button {
+    width: 100%;
+    height: 3rem;
+    border-radius: 50px;
+    margin-top: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.7s, color 0.7s;
+}
+
+.btn__position_left {
+    margin-right: 0.5rem;
+}
+
+.btn__position_right {
+    margin-left: 0.5rem;
+}
+
+.button__hover-red, .button__hover-green {
+    transition: background-color 0.7s, color 0.7s;
+}
+
+.button__hover-red:hover {
+    background-color: darkred;
+    color: white;
+}
+
+.button__hover-green:hover {
+    background-color: darkgreen;
+    color: white;
+}
+
+/* видео */
+.video-yuh, .video-youRight {
+    display: none;
+}
+
+.displayBlock {
+    display: block;
+}
+
+@media (max-width: 1400px){
+    iframe {
+        width: 1120px;
+        height: 1038px;
+    }
+    .btn {
+        display: inline-block;
+        width: 1120px;
+    }
+    .btn__position_left, .btn__position_right {
+        margin: 0;
+    }
+}
