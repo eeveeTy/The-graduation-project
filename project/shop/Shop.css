@@ -6,49 +6,13 @@ body {
     font-family: 'Oswald', sans-serif;
 }
 
-ul.navigation-menu, ul.navigation-submenu {
-    list-style: none; /* Убираем маркеры */
-}
-
-ul.navigation-menu > li, ul.navigation-submenu > li {
-    padding: 1rem;
-    float: left;
-    margin-right: 1rem;
-}
-
-input.menu-nav__link--checkbox, input.navigation-submenu__link-checkbox { /* прячем чекбоксы*/
-    display: none;
-}
-
-.menu-nav__link, .submenu-nav__link {
-    text-decoration: none; /* Убираем подчёркивания */
-    color: white; /* Цвет текста */
-    cursor: pointer;
-}
-
-a.menu-nav__link:hover, label.submenu-nav__link:hover {
-    opacity: 70%; /* прозрачность при наведении*/
-    cursor: pointer; /* курсор "кликер"*/
-}
-
-a.menu-nav__link > ul.navigation-submenu, .input-menu {
-    position: absolute; /**/
-    display: none; /*Спрятали текст*/
-}
-
-a.menu-nav__link:hover > ul.navigation-submenu { /* Hats почему-то в столибк вместе с Hoodie*/ /* уже пофиг*/
-    display: flex; /* элемент покахывается как "блочный" */ /* пофиг*/
-    flex-direction: column-reverse; /* пока так, но тут считываются также и инпуты и из-за этого остаёть много место*/
-    width: 10%; /* ширина конетнта */
-}
-
 input#button-hot-pink { /***************************************/
     background: url("../../img/site-background-image-hot-pink.jpg");
-    padding: 2rem;
-    width: 2rem;
-    height: 2rem;
+    width: 60px;
+    height: 60px;
     position: relative;
     float: right;
+    border: none;
 }
 
 div.grid-uniform, .section-header {

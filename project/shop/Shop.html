@@ -3,54 +3,44 @@
   <head>
     <meta charset="UTF-8">
     <title>Shop</title>
-    <link rel="stylesheet" href="Shop.css" type="text/css">
+    <link href="header/headerStyle.css" rel="stylesheet" type="text/css">
+    <link href="Shop.css" rel="stylesheet" type="text/css">
   </head>
-  <body id="background-img">
-    <div class="menu-bar">
-      <nav class="nav-bar">
-        <div class="push-left">
-          <ul class="navigation-menu">
-            <li>
-              <label class="menu-nav__link" for="menu-nav__link--music">MUSIC</label>
-              <input type="checkbox" class="menu-nav__link--checkbox"
-                     id="menu-nav__link--music"
-                     onclick="contentMusicDisplay()">
-            </li>
-            <li>
-              <a href="#" class="menu-nav__link" id="menu-nav__link-clothes">CLOTHES
-                <ul class="navigation-submenu">
-                  <li>
-                    <label class="submenu-nav__link" for="navigation-submenu__link--t-ships">T-SHIPS</label>
-                    <input type="checkbox" class="navigation-submenu__link-checkbox"
-                           id="navigation-submenu__link--t-ships"
-                           onclick="contentTShirtsDisplay()">
-                  </li>
-                  <li>
-                    <label class="submenu-nav__link" for="navigation-submenu__link--pants_and_shorts">PANTS AND
-                    SHORTS</label>
-                    <input type="checkbox" class="navigation-submenu__link-checkbox"
-                           id="navigation-submenu__link--pants_and_shorts"
-                           onclick="contentPantsAndShortsDisplay()">
-                  </li>
-                  <li>
-                    <label class="submenu-nav__link" for="navigation-submenu__link--hoodie">HOODIE</label>
-                    <input type="checkbox" class="navigation-submenu__link-checkbox"
-                           id="navigation-submenu__link--hoodie"
-                           onclick="contentHoodieDisplay()">
-                  </li>
-                  <li>
-                    <label class="submenu-nav__link" for="navigation-submenu__link--hats">HATS</label>
-                    <input type="checkbox" class="navigation-submenu__link-checkbox"
-                           id="navigation-submenu__link--hats"
-                           onclick="contentHatsDisplay()">
-                  </li>
-                </ul>
-              </a>
-            </li>
-          </ul>
-        </div>
+  <header>
+    <div class="main-header">
+      <nav class="main-nav">
+        <ul class="main-nav__menu">
+          <li class="main-nav__menu__item"><a href="../music/Music.html">MUSIC</a></li>
+          <li class="main-nav__menu__item"><a href="../video/video.html">VIDEO</a></li>
+          <li class="main-nav__menu__item"><a href="../shop/Shop.html">SHOP</a></li>
+          <li class="main-nav__menu__item"><a href="../doja/doja.html">DOJA</a></li>
+        </ul>
       </nav>
     </div>
+    <div class="mobile-img">
+      <img src="header/img/menu3.png" alt="menu-logo" onclick="mobileDisplayBlock()">
+    </div>
+    <nav class="mobile-nav">
+      <ul class="mobile-nav__items">
+        <li class="mobile-nav__item">
+          <a href="../music/Music.html">MUSIC</a>
+        </li>
+        <li class="mobile-nav__item">
+          <a href="../video/video.html">VIDEO</a>
+        </li>
+        <li class="mobile-nav__item">
+          <a href="../shop/Shop.html">SHOP</a>
+        </li>
+        <li class="mobile-nav__item">
+          <a href="../doja/doja.html">DOJA</a>
+        </li>
+      </ul>
+      <div>
+        <button class="mobile-nav__btn--closed">Closed</button>
+      </div>
+    </nav>
+  </header>
+  <body id="background-img">
     <div class="backgroundChange-button">
       <input type="button" id="button-hot-pink" onclick='backgroundChange()'>
     </div>
@@ -418,4 +408,5 @@
     </main>
     <script src="Shop.js"></script>
   </body>
+  <script src="header/headerScript.js"></script>
 </html>
