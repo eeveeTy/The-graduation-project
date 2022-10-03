@@ -1,83 +1,70 @@
 body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
     margin: 0;
-    padding: 0;
-    background: url("https://static6.depositphotos.com/1037473/614/i/600/depositphotos_6149151-stock-photo-plain-pink-background-with-vignetting.jpg") no-repeat fixed center center/cover;
-}
-
-section {
-    text-align: center;
-}
-
-.main-content {
-    margin: 0 10%;
+    background-color: purple;
 }
 
 iframe {
-    margin-top: 6vh;
-    width: 100%;
-    height: 80vh;
-    border-radius: 50px;
+    width: 1200px;
+    height: 800px;
+    object-fit: cover;
+    border: none;
+}
+
+.main-content {
+    width: 1200px;
+    height: 850px;
+    overflow: hidden;
+    border-radius: 80px;
+}
+
+.video {
+    display: flex;
+    transform: translateX(0);
+    transition: transform 0.5s ease-in-out;
+}
+
+/* кнопки */
+.buttons-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5rem;
 }
 
 .btn {
-    width: 100%;
-    display: flex;
-}
-
-.btn-item {
-    width: 100%;
-}
-
-.button {
-    width: 100%;
-    height: 3rem;
-    border-radius: 50px;
-    margin-top: 0.5rem;
+    background-color: hotpink;
+    color: purple;
+    width: 49.5%;
     cursor: pointer;
-    transition: background-color 0.7s, color 0.7s;
+    height: 2.5rem;
+    border: 2px solid purple;
 }
 
-.btn__position_left {
-    margin-right: 0.5rem;
+#left {
+    border-radius: 0 0 100px 0;
 }
 
-.btn__position_right {
-    margin-left: 0.5rem;
+#right {
+    border-radius: 0 0 0 100px;
 }
 
-.button__hover-red, .button__hover-green {
-    transition: background-color 0.7s, color 0.7s;
+#left, #right {
+    transition: color 0.5s, background-color 0.5s;
 }
 
-.button__hover-red:hover {
-    background-color: darkred;
-    color: white;
+#left:hover {
+    color: purple;
+    background-color: red;
 }
 
-.button__hover-green:hover {
-    background-color: darkgreen;
-    color: white;
+#right:hover {
+    color: purple;
+    background-color: green;
 }
 
-/* видео */
-.video-yuh, .video-youRight {
-    display: none;
-}
-
-.displayBlock {
-    display: block;
-}
-
-@media (max-width: 1400px){
-    iframe {
-        width: 100%;
-        height: 940px;
-    }
-    .btn {
-        display: inline-block;
-        width: 100%;
-    }
-    .btn__position_left, .btn__position_right {
-        margin: 0;
-    }
+.btn:focus {
+    outline: none;
 }

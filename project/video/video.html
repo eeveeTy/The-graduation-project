@@ -43,27 +43,27 @@
   <body>
     <section>
       <div class="main-content">
-        <div class="video">
+        <div class="video" id="videos">
           <iframe src="https://www.youtube.com/embed/yxW5yuzVi8w" title="YouTube video player"
-                  class="video-woman"
+                  class="video-woman video-content"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen></iframe>
           <iframe src="https://www.youtube.com/embed/9Ko-nEYJ1GE" title="YouTube video player"
-                  class="video-yuh"
+                  class="video-yuh video-content"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen></iframe>
           <iframe src="https://www.youtube.com/embed/JXgV1rXUoME" title="YouTube video player"
-                  class="video-youRight"
+                  class="video-youRight video-content"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+          <iframe src="https://www.youtube.com/embed/0EVVKs6DQLo" title="YouTube video player"
+                  class="video-KissMeMore video-content"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen></iframe>
         </div>
-        <div class="btn">
-          <div class="btn-item btn__position_left" onclick="left()">
-            <button class="button button__hover-red">previous</button>
-          </div>
-          <div class="btn-item btn__position_right" onclick="right()">
-            <button class="button button__hover-green">next</button>
-          </div>
+        <div class="buttons-container">
+          <button class="btn" id="left">previous</button>
+          <button class="btn" id="right">next</button>
         </div>
       </div>
     </section>
