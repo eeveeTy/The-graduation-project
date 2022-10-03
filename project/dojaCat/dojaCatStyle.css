@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+    background: url("img/boot_screen.jpg") fixed;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+}
+
+
+
+.navigation-box {
+    text-align: center;
+    color: darkred;
+    font-size: 2rem;
+    margin-top: 4rem;
+}
+
+.navigation-menu-career > li, li.main-list {
+    list-style-type: none;
+    margin: 10px;
+}
+
+.navigation-anchor-career, .navigation-anchor-main {
+    text-decoration: none;
+    color: darkgreen;
+    font-weight: bold;
+}
+
+.content-header {
+    text-align: center;
+    font-size: 3rem;
+    color: darkred;
+    margin-top: 20px;
+}
+
+.main-content {
+    font-size: 2rem;
+}
+
+.youth-img, .career-2018-img, .career-2019-img-box-2, .career-2021-img-box-1 {
+    float: right;
+    margin: 2rem;
+}
+
+.main-youth-content, .main-career-2018-content, .main-career-2019-content-box-2, .main-career-2021-content-box-1 {
+    text-align: right;
+    margin: 2rem;
+    padding-top: 2rem;
+}
+
+.main-career-2019-content-box-2, .main-career-2021-content-box-1, .career-2018-content {
+    padding-top: 6rem;
+}
+
+.clear-youth, .clear-career-2018, .clear-career-2019-box-2, .clear-career-2021-box-1 {
+    clear: right;
+}
+
+.career {
+    width: 100%;
+}
+
+.career-2012-img, .career-2019-img-box-1, .career-2019-img-box-3, .career-2021-img-box-2 {
+    float: left;
+    margin: 2rem;
+}
+
+.main-career-2012-content, .main-career-2019-content-box-1, .main-career-2019-content-box-3, .main-career-2021-content-box-2 {
+    text-align: left;
+    margin: 2rem;
+    padding-top: 8rem;
+}
+
+.clear-career-2012, .clear-career-2019-box-1, .clear-career-2019-box-3, .clear-career-2021-box-2 {
+    clear: left;
+}
+
+/* таблица */
+
+h2.awards-nominations-header {
+    margin-top: 4rem;
+}
+
+.awards-nominations-table {
+    text-align: center;
+    width: 100%;
+    margin: auto 2rem;
+
+    border-collapse: collapse;
+}
+
+.awards-nominations-table td, th {
+    border: 1px solid;
+    padding: 0 1rem;
+}
+
+.awards-nominations-table a {
+    text-decoration: none;
+    color: darkgreen;
+}
+
+@media screen and (max-width: 1100px) {
+    .navigation-box {
+        margin: 0;
+        padding: 0;
+        display: block;
+        text-align: center;
+    }
+
+    .content-header {
+        padding: 0.5rem;
+    }
+
+    .navigation-box li {
+        width: 100%;
+    }
+
+    .navigation-menu, .navigation-menu-career {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    .main-img {
+        position: relative;
+        display: block;
+        margin: auto    ;
+        width: 100%;
+    }
+}
