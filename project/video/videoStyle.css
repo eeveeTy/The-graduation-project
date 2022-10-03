@@ -1,10 +1,16 @@
 body {
+    margin: 0;
+    padding: 0;
+    background-color: purple;
+}
+
+
+section {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
     margin: 0;
-    background-color: purple;
 }
 
 iframe {
@@ -63,6 +69,7 @@ iframe {
 #right:hover {
     color: purple;
     background-color: green;
+    object-fit: cover;
 }
 
 .btn:focus {
