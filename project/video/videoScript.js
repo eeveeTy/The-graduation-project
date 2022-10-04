@@ -21,11 +21,9 @@ function changeVideos() {
 rightBtn.addEventListener('click', () => {
     idNumber++
     changeVideos()
-    console.log(idNumber)
 })
 
 leftBtn.addEventListener('click', () => {
     idNumber--
     changeVideos()
-    console.log(idNumber)
 })

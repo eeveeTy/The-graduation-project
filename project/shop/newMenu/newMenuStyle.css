@@ -13,6 +13,7 @@ body {
     background: radial-gradient(purple, black);
     border-radius: 50px;
 }
+
 .newMenu-menu__items {
     display: table;
     list-style-type: none;
@@ -44,23 +45,25 @@ body {
 /*Лого*/
 
 .newMenu-submenu__img {
-    position: absolute;
+    position: fixed;
     display: none;
     margin: 1rem;
     width: 100px;
     height: 100px;
     cursor: pointer;
+    z-index: 10;
 }
 
 /* СабМеню*/
 
 .newMenu-submenu {
-    position: absolute;
+    position: fixed;
     display: none;
     margin-top: 8rem;
     font-size: 32px;
     background: linear-gradient(to top, black, purple);
     border-radius: 0 200px 200px 0;
+    z-index: 10;
 }
 
 .newMenu-submenu__items {

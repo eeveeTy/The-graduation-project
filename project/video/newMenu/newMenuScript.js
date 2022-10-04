@@ -21,7 +21,6 @@ newMenuSubmenuBtnClosed.addEventListener('click', function () {
 
 window.addEventListener('resize', function () {
     var windowWidth = window.innerWidth;
-    console.log(windowWidth);
     if (windowWidth >= 1000) {
         newMenuSubmenu.style.display = 'none';
         value = 0;

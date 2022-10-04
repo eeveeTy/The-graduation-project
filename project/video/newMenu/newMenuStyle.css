@@ -44,19 +44,19 @@ body {
 /*Лого*/
 
 .newMenu-submenu__img {
-    position: absolute;
+    position: fixed;
     display: none;
     margin: 1rem;
     width: 100px;
     height: 100px;
     cursor: pointer;
-    z-index: 9;
+    z-index: 10;
 }
 
 /* СабМеню*/
 
 .newMenu-submenu {
-    position: absolute;
+    position: fixed;
     display: none;
     margin-top: 8rem;
     font-size: 32px;
