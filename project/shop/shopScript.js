@@ -3,12 +3,12 @@ function backgroundChange() {
     var SearchContentBody = document.getElementById('background-img');
     var SearchContentButtonBackground = document.getElementById('button-hot-pink');
     if (backgroundImg !== 0) {
-        SearchContentBody.style.backgroundImage = 'url(http://localhost:63342/project/shop/img/site-background-image-planet-her.jpg?_ijt=5ujqdh8stf2padket1ncfljlpu)';
-        SearchContentButtonBackground.style.backgroundImage = 'url(https://pm1.narvii.com/7445/e8238b8ff36e164a1c735e2d3279fe38ec42cfedr1-768-768v2_hq.jpg)';
+        SearchContentBody.style.backgroundImage = 'url(img/site-background-image-planet-her.jpg)';
+        SearchContentButtonBackground.style.backgroundImage = 'url(img/site-background-image-hot-pink.jpg)';
         ++backgroundImg;
     } else {
-        SearchContentBody.style.backgroundImage = 'url(https://pm1.narvii.com/7445/e8238b8ff36e164a1c735e2d3279fe38ec42cfedr1-768-768v2_hq.jpg)';
-        SearchContentButtonBackground.style.backgroundImage = 'url(http://localhost:63342/project/shop/img/site-background-image-planet-her.jpg?_ijt=5ujqdh8stf2padket1ncfljlpu)';
+        SearchContentBody.style.backgroundImage = 'url(img/site-background-image-hot-pink.jpg)';
+        SearchContentButtonBackground.style.backgroundImage = 'url(img/site-background-image-planet-her.jpg)';
         --backgroundImg;
     }
 }

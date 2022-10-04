@@ -3,10 +3,11 @@
 body {
     margin: 0;
     padding: 0;
-    background: #c7b39b url("http://localhost:63342/project/shop/img/site-background-image-planet-her.jpg") no-repeat center center fixed;
+    background: #c7b39b url("img/site-background-image-planet-her.jpg") no-repeat center center fixed;
     background-size: cover;
     font-family: 'Oswald', sans-serif;
 }
+
 
 div.backgroundChange-button {
     width: 72px;
@@ -16,10 +17,10 @@ div.backgroundChange-button {
 }
 
 input#button-hot-pink { /***************************************/
-    background: url("https://pm1.narvii.com/7445/e8238b8ff36e164a1c735e2d3279fe38ec42cfedr1-768-768v2_hq.jpg");
+    background: url("img/site-background-image-hot-pink.jpg");
     width: 72px;
     height: 72px;
-    border: 2px solid yellow;
+    border: 3px solid #ea2bea;
     border-radius: 50px;
 }
 
