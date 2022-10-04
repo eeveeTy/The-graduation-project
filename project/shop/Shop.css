@@ -1,17 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&display=swap');
 
 body {
-    background: #c7b39b url("../../img/site-background-image-planet-her.jpg") no-repeat center center fixed;
+    margin: 0;
+    padding: 0;
+    background: #c7b39b url("http://localhost:63342/project/shop/img/site-background-image-planet-her.jpg") no-repeat center center fixed;
     background-size: cover;
     font-family: 'Oswald', sans-serif;
 }
 
+div.backgroundChange-button {
+    width: 72px;
+    height: 72px;
+    position: sticky;
+    margin-left: auto;
+}
+
 input#button-hot-pink { /***************************************/
-    background: url("../../img/site-background-image-hot-pink.jpg");
-    width: 60px;
-    height: 60px;
-    position: fixed;
-    margin: 0.25rem;
+    background: url("https://pm1.narvii.com/7445/e8238b8ff36e164a1c735e2d3279fe38ec42cfedr1-768-768v2_hq.jpg");
+    width: 72px;
+    height: 72px;
+    border: 2px solid yellow;
+    border-radius: 50px;
 }
 
 div.grid-uniform {
@@ -72,7 +81,6 @@ div.grid-uniform {
     font-size: 1.5em; /* размер шрифта (цен) */
 }
 
-/* медиа */
 
 @media (max-width: 576px) {
     .grid__item, .img{
@@ -80,8 +88,6 @@ div.grid-uniform {
         font-size: 0.5em;
     }
 }
-
-/*псевдоклассы*/
 
 .grid-uniform__item {
     display: none;
