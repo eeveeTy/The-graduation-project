@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    margin: 0;
+    padding: 1rem 0;
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    transition: background-color 1s;
+}
+
+.footer:hover {
+    background-color: purple;
+}
+
+.footer > a {
+    font-size: 32px;
+    text-decoration: none;
+    color: hotpink;
+    padding: 0.5rem;
+    border-radius: 50px;
+}
+
+.footer > a:hover {
+    text-decoration: none;
+    border: 2px solid hotpink;
+    border-radius: 50px;
+}

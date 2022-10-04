@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Doja Cat Shop</title>
+    <link href="navigation/header/newMenuStyle.css" rel="stylesheet" type="text/css">
+    <link href="navigation/footer/footerStyle.css" rel="stylesheet" type="text/css">
+    <link href="shopStyle.css" rel="stylesheet" type="text/css">
+  </head>
+  <header class="newMenu">
+    <nav class="newMenu-menu">
+      <ul class="newMenu-menu__items">
+        <li class="newMenu-menu__item"><a href="../music/music.html">MUSIC</a></li>
+        <li class="newMenu-menu__item"><a href="../video/video.html">VIDEO</a></li>
+        <li class="newMenu-menu__item"><a href="shop.html">SHOP</a></li>
+        <li class="newMenu-menu__item"><a href="../dojaCat/dojaCat.html">DOJA</a></li>
+      </ul>
+    </nav>
+    <div class="newMenu-submenu__logo">
+      <img src="navigation/header/img/menu3.png" alt="submenu-logo" class="newMenu-submenu__img">
+    </div>
+    <nav class="newMenu-submenu">
+      <ul class="newMenu-submenu__items">
+        <li class="newMenu-submenu__item"><a href="../music/music.html">MUSIC</a></li>
+        <li class="newMenu-submenu__item"><a href="../video/video.html">VIDEO</a></li>
+        <li class="newMenu-submenu__item"><a href="shop.html">SHOP</a></li>
+        <li class="newMenu-submenu__item"><a href="../dojaCat/dojaCat.html">DOJA</a></li>
+        <li class="newMenu-submenu__item">
+          <button class="newMenu-submenu__btn">closed</button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <body id="background-img">
+    <div class="backgroundChange-button">
+      <input type="button" id="button-hot-pink" onclick='backgroundChange()'>
+    </div>
+    <main class="wrapper main-content">
+      <header class="section-header">
+        <nav class="search-menu">
+          <ul class="search-menu__items">
+            <li class="search-menu__item" onclick="contentHoodieDisplay()">Hoodie</li>
+            <li class="search-menu__item" onclick="contentHatsDisplay()">Hats</li>
+            <li class="search-menu__item" onclick="contentPantsAndShortsDisplay()">Pants and Shorts</li>
+            <li class="search-menu__item" onclick="contentTShirtsDisplay()">T-shirts</li>
+            <li class="search-menu__item" onclick="contentMusicDisplay()">Music</li>
+          </ul>
+        </nav>
+      </header>
+      <div class="grid-uniform">
+        <div class="grid-uniform__item grid--item__block--1 grid-uniform__content--hoodie">
+          <div class="product-container">
+            <a href="#" class="grid__image">
+              <picture>
+                <img class="img" src="img/hoodie/HOODIE-1.webp" alt="hoodie-1">
+              </picture>
+            </a>
+            <div class="product-details">
+              <h2 class="product-title">
+                <a href="#">GET INTO IT (YUH) HOODIE</a>
+              </h2>
+              <div class="currency">
+                <span class="product-price">$60.00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid-uniform__item grid--item__block--2 grid-uniform__content--hoodie">
+          <div class="product-container">
+            <a href="#" class="grid__image">
+              <picture>
+                <img class="img" src="img/hoodie/HOODIE-2.webp" alt="hoodie-2">
+              </picture>
+            </a>
+            <div class="product-details">
+              <h2 class="product-title">
+                <a href="#">PLANET HER HOODIE</a>
+              </h2>
+              <div class="currency">
+                <span class="product-prise">$55.00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid-uniform__item grid--item__block--3 grid-uniform__content--hoodie">
+          <div class="product-container">
+            <a href="#" class="grid__image">
+              <picture>
+                <img class="img" src="img/hoodie/HOODIE-3.webp" alt="hoodie-3">
+              </picture>
+            </a>
+            <div class="product-details">
+              <h2 class="product-title">
+                <a href="#">LOVE TO DREAM PULLOVER</a>
+              </h2>
+              <div class="currency">
+                <span class="product-prise">$55.00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid-uniform__item grid--item__block--4 grid-uniform__content--hoodie">
+          <div class="product-container">
+            <a href="#" class="grid__image">
+              <picture>
+                <img class="img" src="img/hoodie/HOODIE-4.webp" alt="hoodie-4">
+              </picture>
+            </a>
+            <div class="product-details">
+              <h2 class="product-title">
+                <a href="#">KICK ME CROPPED HOODIE</a>
+              </h2>
+              <div class="currency">
+                <span class="product-prise">$60.00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid-uniform__item grid--item__block--5 grid-uniform__content--hats">
+          <div class="product-container">
+            <a href="#" class="grid__image">
+              <picture>
+                <img class="img" src="img/hats/HATS-1.webp" alt="hats-1">
+              </picture>
+            </a>
+            <div class="product-details">
+              <h2 class="product-title">
+                <a href="#">PLANET HER BUCKET HATE</a>
+              </h2>
+              <div class="currency">
+                <span class="product-prise">$35.00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid-uniform__item grid--item__block--6 grid-uniform__content--hats">
+          <div class="product-container">
+            <a href="#" class="grid__image">
+              <picture>
+                <img class="img" src="img/hats/HATS-2.webp" alt="hats-2">
+              </picture>
+            </a>
+            <div class="product-details">
+              <h2 class="product-title">
+                <a href="#">DOJA DAD CAP</a>
+              </h2>
+              <div class="currency">
+                <span class="product-prise">$25.00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid-uniform__item grid--item__block--7 grid-uniform__content--pantsAndShorts">
+          <div class="product-container">
+            <a href="#" class="grid__image">
+              <picture>
+                <img class="img" src="img/pants_and_shorts/shorts-1.webp" alt="shorts-1">
+              </picture>
+            </a>
+            <div class="product-details">
+              <h2 class="product-title">
+                <a href="#">DOJA SHORTS</a>
+              </h2>
+              <div class="currency">
+                <span class="product-prise">$45.00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid-uniform__item grid--item__block--8 grid-uniform__content--pantsAndShorts">
+          <div class="product-container">
+            <a href="#" class="grid__image">
+              <picture>
+                <img class="img" src="img/pants_and_shorts/pants-1.webp" alt="pants-1">
+              </picture>
+            </a>
+            <div class="product-details">
+              <h2 class="product-title">
+                <a href="#">KICK ME PINK SWEAT PANTS</a>
+              </h2>
+              <div class="currency">
+                <span class="product-prise">$55.00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid-uniform__item grid--item__block--9 grid-uniform__content--pantsAndShorts">
+          <div class="product-container">
+            <a href="#" class="grid__image">
+              <picture>
+                <img class="img" src="img/pants_and_shorts/pants-2.webp" alt="pants-2">
+              </picture>
+            </a>
+            <div class="product-details">
+              <h2 class="product-title">
+                <a href="#">KICK ME BLACK SWEAT PANTS</a>
+              </h2>
+              <div class="currency">
+                <span class="product-prise">$55.00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid-uniform__item grid--item__block--10 grid-uniform__content--t-shirts">
+          <div class="product-container">
+            <a href="#" class="grid__image">
+              <picture>
+                <img class="img" src="img/t-shirt/t-shirts-1.webp" alt="t-shirts-1">
+              </picture>
+            </a>
+            <div class="product-details">
+              <h2 class="product-title">
+                <a href="#">HEAVY METAL T-SHIRT I</a>
+              </h2>
+              <div class="currency">
+                <span class="product-prise">$25.00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid-uniform__item grid--item__block--11 grid-uniform__content--t-shirts">
+          <div class="product-container">
+            <a href="#" class="grid__image">
+              <picture>
+                <img class="img" src="img/t-shirt/t-shirts-2.webp" alt="t-shirts-2">
+              </picture>
+            </a>
+            <div class="product-details">
+              <h2 class="product-title">
+                <a href="#">HEAVY METAL T-SHIRT II</a>
+              </h2>
+              <div class="currency">
+                <span class="product-prise">$25.00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid-uniform__item grid--item__block--12 grid-uniform__content--t-shirts">
+          <div class="product-container">
+            <a href="#" class="grid__image">
+              <picture>
+                <img class="img" src="img/t-shirt/t-shirts-3.webp" alt="t-shirts-3">
+              </picture>
+            </a>
+            <div class="product-details">
+              <h2 class="product-title">
+                <a href="#">#DOJAMMYS BLACK T-SHIRT</a>
+              </h2>
+              <div class="currency">
+                <span class="product-prise">$25.00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid-uniform__item grid--item__block--13 grid-uniform__content--t-shirts">
+          <div class="product-container">
+            <a href="#" class="grid__image">
+              <picture>
+                <img class="img" src="img/t-shirt/t-shirts-4.webp" alt="t-shirts-4">
+              </picture>
+            </a>
+            <div class="product-details">
+              <h2 class="product-title">
+                <a href="#">KICK ME PINK T-SHIRT</a>
+              </h2>
+              <div class="currency">
+                <span class="product-prise">$25.00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid-uniform__item grid--item__block--14 grid-uniform__content--t-shirts">
+          <div class="product-container">
+            <a href="#" class="grid__image">
+              <picture>
+                <img class="img" src="img/t-shirt/t-shirts-5.webp" alt="t-shirts-5">
+              </picture>
+            </a>
+            <div class="product-details">
+              <h2 class="product-title">
+                <a href="#">KICK ME BLACK T-SHIRT</a>
+              </h2>
+              <div class="currency">
+                <span class="product-prise">$25.00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid-uniform__item grid--item__block--15 grid-uniform__content--t-shirts">
+          <div class="product-container">
+            <a href="#" class="grid__image">
+              <picture>
+                <img class="img" src="img/t-shirt/t-shirts-6.webp" alt="t-shirts-6">
+              </picture>
+            </a>
+            <div class="product-details">
+              <h2 class="product-title">
+                <a href="#">PLANET HER T-SHIRT</a>
+              </h2>
+              <div class="currency">
+                <span class="product-prise">$25.00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid-uniform__item grid--item__block--15 grid-uniform__content--t-shirts">
+          <div class="product-container">
+            <a href="#" class="grid__image">
+              <picture>
+                <img class="img" src="img/t-shirt/t-shirts-7.webp" alt="t-shirts-7">
+              </picture>
+            </a>
+            <div class="product-details">
+              <h2 class="product-title">
+                <a href="#">GET INTO IT (YUH) T-SHIRT</a>
+              </h2>
+              <div class="currency">
+                <span class="product-prise">$25.00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid-uniform__item grid--item__block--17 grid-uniform__content--t-shirts">
+          <div class="product-container">
+            <a href="#" class="grid__image">
+              <picture>
+                <img class="img" src="img/t-shirt/t-shirts-8.webp" alt="t-shirts-8">
+              </picture>
+            </a>
+            <div class="product-details">
+              <h2 class="product-title">
+                <a href="#">NEED TO KNOW YOU T-SHIRT</a>
+              </h2>
+              <div class="currency">
+                <span class="product-prise">$25.00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid-uniform__item grid--item__block--18 grid-uniform__content--t-shirts">
+          <div class="product-container">
+            <a href="#" class="grid__image">
+              <picture>
+                <img class="img" src="img/t-shirt/t-shirts-9.webp" alt="t-shirts-9">
+              </picture>
+            </a>
+            <div class="product-details">
+              <h2 class="product-title">
+                <a href="#">TASTE LONG SLEEVE T-SHIRT</a>
+              </h2>
+              <div class="currency">
+                <span class="product-prise">$40.00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid-uniform__item grid--item__block--19 grid-uniform__content--music">
+          <div class="product-container">
+            <a href="#" class="grid__image">
+              <picture>
+                <img class="img" src="img/music/album-1.webp" alt="planet her album">
+              </picture>
+            </a>
+            <div class="product-details">
+              <h2 class="product-title">
+                <a href="#">PLANET HER - CD</a>
+              </h2>
+              <div class="currency">
+                <span class="product-prise">$11.00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid-uniform__item grid--item__block--20 grid-uniform__content--music">
+          <div class="product-container">
+            <a href="#" class="grid__image">
+              <picture>
+                <img class="img" src="img/music/vinyl-1.webp" alt="planet her vinyl">
+              </picture>
+            </a>
+            <div class="product-details">
+              <h2 class="product-title">
+                <a href="#">PLANET HER - DELUXE 2LP</a>
+              </h2>
+              <div class="currency">
+                <span class="product-prise">$24.00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid-uniform__item grid--item__block--21 grid-uniform__content--music">
+          <div class="product-container">
+            <a href="#" class="grid__image">
+              <picture>
+                <img class="img" src="img/music/track-1.webp" alt="kiss me more (feat. SZA)">
+              </picture>
+            </a>
+            <div class="product-details">
+              <h2 class="product-title">
+                <a href="#">Kiss Me More (feat. SZA) - Edited</a>
+              </h2>
+              <div class="currency">
+                <span class="product-prise">$6.69</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+  <footer class="footer">
+    <a href="../main-page/DojaOfficalKEKW.html" class="footer-home">HOME</a>
+  </footer>
+  <script src="shopScript.js"></script>
+  <script src="navigation/header/newMenuScript.js"></script>
+</html>

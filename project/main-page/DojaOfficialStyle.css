@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: black;
+}
+
+.navigation {
+    width: 100%;
+    text-align: center;
+}
+
+.menu__items {
+    width: 100%;
+    display: table;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+}
+
+.menu__item {
+    display: table-cell;
+    list-style-type: none;
+    vertical-align: middle;
+    font-size: 2rem;
+    transition: background-color 0.5s, font-size 0.5s;
+}
+
+.menu__item > a {
+    text-decoration: none;
+    color: deeppink;
+}
+
+.menu__item:hover {
+    background-color: purple;
+    font-size: 5rem;
+}
+
+@media (max-width: 700px) {
+    .menu__item {
+        display: block;
+        padding: 12.5vh 0;
+    }
+}
