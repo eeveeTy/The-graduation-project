@@ -96,6 +96,12 @@ li.mobile-nav__item > a:hover {
 
 /**/
 
+.newMenu-menu__img {
+    width: 100px;
+    height: 100px;
+    background: black;
+}
+
 @media (max-width: 1065px) {
     nav ul li:hover > ul.main-nav__submenu {
         display: inline;
