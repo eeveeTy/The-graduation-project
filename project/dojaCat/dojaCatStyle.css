@@ -80,6 +80,10 @@ body {
 
 /* таблица */
 
+.awards-nominations {
+    margin: 0 0 6rem 0;
+}
+
 h2.awards-nominations-header {
     margin-top: 4rem;
 }
