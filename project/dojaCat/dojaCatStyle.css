@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    padding: 1rem 0 0 0;
     background: url("img/boot_screen.jpg") fixed;
     -webkit-background-size: 100%;
     background-size: 100%;
@@ -128,5 +129,11 @@ h2.awards-nominations-header {
         display: block;
         margin: auto    ;
         width: 100%;
+    }
+}
+
+@media screen and  (max-width: 430px){
+    ul.navigation-menu {
+        margin-top: 10rem;
     }
 }
