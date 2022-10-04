@@ -4,40 +4,28 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link href="videoStyle.css" rel="stylesheet" type="text/css">
-    <link href="header/headerStyle.css" rel="stylesheet" type="text/css">
+    <link href="newMenu/newMenuStyle.css" rel="stylesheet" type="text/css">
   </head>
-  <header>
-    <div class="main-header">
-      <nav class="main-nav">
-        <ul class="main-nav__menu">
-          <li class="main-nav__menu__item"><a href="../music/Music.html">MUSIC</a></li>
-          <li class="main-nav__menu__item"><a href="../video/video.html">VIDEO</a></li>
-          <li class="main-nav__menu__item"><a href="../shop/Shop.html">SHOP</a></li>
-          <li class="main-nav__menu__item"><a href="../dojaCat/dojaCat.html">DOJA</a></li>
-        </ul>
-      </nav>
-    </div>
-    <div class="mobile-img">
-      <img src="header/img/menu3.png" alt="menu-logo" onclick="mobileDisplayBlock()">
-    </div>
-    <nav class="mobile-nav">
-      <ul class="mobile-nav__items">
-        <li class="mobile-nav__item">
-          <a href="../music/Music.html">MUSIC</a>
-        </li>
-        <li class="mobile-nav__item">
-          <a href="../video/video.html">VIDEO</a>
-        </li>
-        <li class="mobile-nav__item">
-          <a href="../shop/Shop.html">SHOP</a>
-        </li>
-        <li class="mobile-nav__item">
-          <a href="../dojaCat/dojaCat.html">DOJA</a>
-        </li>
+  <header class="newMenu">
+    <nav class="newMenu-menu">
+      <ul class="newMenu-menu__items">
+        <li class="newMenu-menu__item"><a href="http://localhost:63342/project/music/Music.html">MUSIC</a></li>
+        <li class="newMenu-menu__item"><a href="http://localhost:63342/project/video/video.html">VIDEO</a></li>
+        <li class="newMenu-menu__item"><a href="http://localhost:63342/project/shop/Shop.html">SHOP</a></li>
+        <li class="newMenu-menu__item"><a href="http://localhost:63342/project/dojaCat/dojaCat.html">DOJA</a></li>
       </ul>
-      <div>
-        <button class="mobile-nav__btn--closed">Closed</button>
-      </div>
+    </nav>
+    <div class="newMenu-submenu__logo">
+      <img src="http://localhost:63342/project/music/newMenu/img/menu3.png" alt="submenu-logo" class="newMenu-submenu__img">
+    </div>
+    <nav class="newMenu-submenu">
+      <ul class="newMenu-submenu__items">
+        <li class="newMenu-submenu__item"><a href="http://localhost:63342/project/music/Music.html">MUSIC</a></li>
+        <li class="newMenu-submenu__item"><a href="http://localhost:63342/project/video/video.html">VIDEO</a></li>
+        <li class="newMenu-submenu__item"><a href="http://localhost:63342/project/shop/Shop.html">SHOP</a></li>
+        <li class="newMenu-submenu__item"><a href="http://localhost:63342/project/dojaCat/dojaCat.html">DOJA</a></li>
+        <li class="newMenu-submenu__item"><button class="newMenu-submenu__btn">closed</button></li>
+      </ul>
     </nav>
   </header>
   <body>
@@ -76,6 +64,6 @@
       </div>
     </section>
     <script src="videoScript.js"></script>
-    <script src="header/headerScript.js"></script>
+    <script src="newMenu/newMenuScript.js"></script>
   </body>
 </html>
