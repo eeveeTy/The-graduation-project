@@ -121,7 +121,7 @@ li.album__item > p {
     }
 }
 
-/*залоченый класс*/
+/*залоченый класс для JS */
 .backgroundAmala {
     background: url("media/img/amala-Background.jpg") no-repeat fixed;;
     background-size: cover;
@@ -136,8 +136,6 @@ li.album__item > p {
     background: url("media/img/planetHer-background.jpg") no-repeat fixed;
     background-size: cover;
 }
-
-/* тест анимации */
 
 @keyframes colorTest {
     from {

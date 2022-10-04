@@ -1,4 +1,5 @@
 var backgroundImg = 0;
+
 function backgroundChange() {
     var SearchContentBody = document.getElementById('background-img');
     var SearchContentButtonBackground = document.getElementById('button-hot-pink');

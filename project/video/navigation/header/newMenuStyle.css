@@ -13,6 +13,7 @@ body {
     background: radial-gradient(purple, black);
     border-radius: 50px;
 }
+
 .newMenu-menu__items {
     display: table;
     list-style-type: none;
@@ -30,7 +31,7 @@ body {
 
 .newMenu-menu__item > a {
     text-decoration: none;
-    transition: color 0.5s , background-color 0.5s;
+    transition: color 0.5s, background-color 0.5s;
     padding: 0.7rem 2rem;
     border-radius: 50px;
     color: pink;
@@ -42,7 +43,6 @@ body {
 }
 
 /*Лого*/
-
 .newMenu-submenu__img {
     position: fixed;
     display: none;
@@ -54,7 +54,6 @@ body {
 }
 
 /* СабМеню*/
-
 .newMenu-submenu {
     position: fixed;
     display: none;
@@ -79,7 +78,7 @@ body {
     padding: 0 2rem 0 2rem;
     margin-right: 4rem;
     text-decoration: none;
-    transition: color 0.5s , background-color 0.5s;
+    transition: color 0.5s, background-color 0.5s;
     border-radius: 50px;
     color: hotpink;
 }
@@ -101,8 +100,7 @@ body {
     background: darkred;
 }
 
-/**/
-@media (max-width: 1000px){
+@media (max-width: 1000px) {
     .newMenu-menu {
         display: none;
     }

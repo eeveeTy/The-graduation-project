@@ -10,7 +10,6 @@ body {
 }
 
 
-
 .navigation-box {
     text-align: center;
     color: darkred;
@@ -131,12 +130,12 @@ h2.awards-nominations-header {
     .main-img {
         position: relative;
         display: block;
-        margin: auto    ;
+        margin: auto;
         width: 100%;
     }
 }
 
-@media screen and  (max-width: 430px){
+@media screen and  (max-width: 430px) {
     ul.navigation-menu {
         margin-top: 10rem;
     }

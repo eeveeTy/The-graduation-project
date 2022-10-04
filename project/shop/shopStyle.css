@@ -8,7 +8,6 @@ body {
     font-family: 'Oswald', sans-serif;
 }
 
-
 div.backgroundChange-button {
     width: 72px;
     height: 72px;
@@ -36,7 +35,6 @@ div.grid-uniform {
 }
 
 /*поисковик*/
-
 .section-header {
     margin: 200px 0;
     text-align: center;
@@ -46,7 +44,7 @@ div.grid-uniform {
 
 .search-menu__item {
     margin: 0.25rem 0.5rem;
-    padding: 0 1rem ;
+    padding: 0 1rem;
     cursor: pointer;
     transition: color 0.5s, background-color 0.5s;
     border: 2px solid pink;
@@ -57,8 +55,6 @@ div.grid-uniform {
     color: pink;
     background-color: purple;
 }
-
-/**/
 
 .grid-uniform {
     z-index: 0;
@@ -84,7 +80,7 @@ div.grid-uniform {
 
 
 @media (max-width: 576px) {
-    .grid__item, .img{
+    .grid__item, .img {
         width: 100%;
         font-size: 0.5em;
     }
